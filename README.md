@@ -1,69 +1,117 @@
-{
-  "title": "Heart Disease Prediction System (ML + Streamlit)",
-  "description": "A machine learning-powered web application that predicts the risk of heart disease based on user health parameters. Built using K-Nearest Neighbors (KNN) and deployed with Streamlit, this project demonstrates an end-to-end ML pipeline.",
-  
-  "overview": "This application allows users to input medical attributes such as age, cholesterol, heart rate, etc., and get an instant prediction of whether they are at high risk or low risk of heart disease.",
-  
-  "tech_stack": [
-    "Python",
-    "Pandas",
-    "Scikit-learn",
-    "Streamlit",
-    "Joblib"
-  ],
-  
-  "features": [
-    "Interactive UI using Streamlit",
-    "Real-time prediction",
-    "Pre-trained ML model (KNN)",
-    "Feature scaling using StandardScaler",
-    "Handles categorical inputs dynamically",
-    "Clean and minimal design"
-  ],
-  
-  "input_parameters": [
-    "Age",
-    "Sex",
-    "Chest Pain Type",
-    "Resting Blood Pressure (mm Hg)",
-    "Cholesterol (mg/dl)",
-    "Fasting Blood Sugar",
-    "Resting ECG",
-    "Max Heart Rate",
-    "Exercise-Induced Angina",
-    "Oldpeak",
-    "ST Slope"
-  ],
-  
-  "output": {
-    "high_risk": "High risk of heart disease",
-    "low_risk": "Low risk of heart disease"
-  },
-  
-  "project_structure": {
-    "app.py": "Streamlit application",
-    "KNN_heart.pkl": "Trained KNN model",
-    "scaler.pkl": "StandardScaler object",
-    "X.columns.pkl": "Feature column structure",
-    "README.md": "Project documentation"
-  },
-  
-  "run_locally": [
-    "git clone https://github.com/your-username/your-repo-name.git",
-    "cd your-repo-name",
-    "pip install -r requirements.txt",
-    "streamlit run app.py"
-  ],
-  
-  "future_improvements": [
-    "Add more ML models (Logistic Regression, Random Forest)",
-    "Deploy on cloud (AWS / Streamlit Cloud)",
-    "Show prediction probability",
-    "Add model evaluation metrics (Accuracy, ROC-AUC)"
-  ],
-  
-  "author": {
-    "name": "Amitava Mondal",
-    "role": "Aspiring AI Engineer | ML Enthusiast"
-  }
-}
+
+## ❤️ Heart Disease Prediction System (ML + Streamlit)
+
+A machine learning-powered web application that predicts the **risk of heart disease** based on user health parameters. Built using a **K-Nearest Neighbors (KNN)** model and deployed with an interactive **Streamlit UI**, this project demonstrates end-to-end ML workflow — from preprocessing to real-time inference.
+
+---
+
+## 🚀 Features
+
+* 🔍 **Real-time Prediction** using trained ML model
+* 📊 **User-friendly UI** built with Streamlit
+* ⚙️ **Preprocessing Pipeline** with feature scaling
+* 🧠 **KNN Model** for classification
+* 📁 **Serialized Models** using `joblib`
+* 🧩 Handles **categorical encoding dynamically**
+
+---
+
+## 🧠 Machine Learning Pipeline
+
+1. **Data Preprocessing**
+
+   * Handling categorical variables using one-hot encoding
+   * Feature scaling using StandardScaler
+
+2. **Model Training**
+
+   * Algorithm: **K-Nearest Neighbors (KNN)**
+   * Saved as: `KNN_heart.pkl`
+
+3. **Deployment**
+
+   * Built with **Streamlit**
+   * Takes real-time user input and predicts risk
+
+---
+
+## 🖥️ Input Features
+
+The model takes the following medical attributes:
+
+* Age
+* Sex
+* Chest Pain Type
+* Resting Blood Pressure
+* Cholesterol Level
+* Fasting Blood Sugar
+* Resting ECG
+* Max Heart Rate
+* Exercise-Induced Angina
+* Oldpeak (ST depression)
+* ST Slope
+
+---
+
+## 📦 Project Structure
+
+```
+├── app.py                # Streamlit app
+├── KNN_heart.pkl        # Trained ML model
+├── scaler.pkl           # Feature scaler
+├── X.columns.pkl        # Expected feature columns
+├── README.md            # Project documentation
+```
+
+---
+
+## ▶️ Run Locally
+
+```bash
+# Clone the repo
+git clone https://github.com/your-username/your-repo-name.git
+
+# Navigate to project
+cd your-repo-name
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
+```
+
+---
+
+## 📊 Output
+
+* 🟢 **Low Risk of Heart Disease**
+* 🔴 **High Risk of Heart Disease**
+
+---
+
+## 💡 Key Highlights
+
+* Ensures correct feature alignment using `expected_columns`
+* Prevents missing feature errors dynamically
+* Clean and minimal UI for better usability
+* Fully beginner-to-intermediate level ML deployment project
+
+---
+
+## 🎯 Future Improvements
+
+* 🔥 Add model comparison (Logistic Regression, Random Forest, etc.)
+* 🌐 Deploy on cloud (AWS / Streamlit Cloud)
+* 📈 Show prediction probability instead of binary output
+* 🧪 Add model evaluation metrics (Accuracy, ROC-AUC)
+
+---
+
+## 👨‍💻 Author
+
+**Amitava Mondal**
+Aspiring AI Engineer | ML Enthusiast
+
+---
+
